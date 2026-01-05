@@ -1,1 +1,13 @@
 @import "tailwindcss";
+/* styles.css */
+#container {
+  opacity: 0;
+  transform: translateY(-25px);
+}
+
+#kaam:hover + #container,
+#container:hover {
+  opacity: 1;
+  transform: translateY(1);
+  pointer-events: auto;
+}
